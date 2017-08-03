@@ -2,12 +2,117 @@
 
 h1.titlePage {
     font-family: 'Zilla Slab Highlight';
-    font-size: 50px;                
+    font-size: 50px;           
+    text-align: center;     
+    margin:20px 0px;
 }
+.menuNav {
+     text-align: center;
+}
+
 .menuNav a {
     font-family: 'Lobster', cursive;
     font-size: 30px;
+    margin:0px 20px;
 } 
 .menuNav a:hover {
     background-color:rgb(100,150,120);
+}
+
+.footer {
+  font-family: 'Lobster', cursive;    
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+
+@media screen and (min-width: 1000px) {
+    .slideContainer {
+    margin: 0 auto;
+    padding: 40px;
+    color: #333;
+    background: #ebebeb;
+    width:900px;  
+    height:700px;
+        img {
+        width:900px;  
+        height:600px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto
+        }
+        button { }
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width:990px) {
+    h1.titlePage {
+        font-family: 'Zilla Slab Highlight';
+        font-size: 20px;           
+        text-align: center;     
+        margin:5px 0px;
+    }
+    .menuNav {
+        text-align: center;
+    }
+
+    .menuNav a {
+        font-family: 'Lobster', cursive;
+        font-size: 15px;
+        margin:0px 10px;
+    }    
+    .slideContainer {
+    padding: 10px;
+    width:300px;  
+    height:290px;
+        img {
+        width:290px;  
+        height:280px;
+        }
+        button { }
+    }
+}
+
+@media screen and (max-width:360px) {
+
+    h1.titlePage {
+        font-family: 'Zilla Slab Highlight';
+        font-size: 20px;           
+        text-align: center;     
+        margin:5px 0px;
+    }
+    .menuNav {
+        text-align: center;
+    }
+
+    .menuNav a {
+        font-family: 'Lobster', cursive;
+        font-size: 15px;
+        margin:0px 10px;
+    } 
+
+    .slideContainer {
+    margin: 0 auto;
+    padding: 10px;
+    color: #333;
+    background: #ebebeb;
+    width:300px;  
+    height:290px;
+        img {
+        width:290px;  
+        height:280px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto
+        }
+        button { }
+    }
+}
+
+#spotifyPlayer {
+
 }

@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 {% extends "base.twig" %}
 <html lang="en">
-    {% block header %}    {{ parent() }}{% endblock %}    
+    {% block header %}    {{ parent() }} 
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+    {% endblock %}    
     <body>
         {% block menu %}   {{ parent() }} {% endblock %}
         {% block content %}
-                <div id="map_1"></div>  
+                <div id="spotifyPlayer"></div>   
+                <div id="slide" class="slideContainer"></div>
                 <script type="text/javascript">
-               //     renderMap('map_1', {x:1000, y:1230, status:'ON'});
+                    renderSlide('slide', {x:1000, y:1230, status:'ON'});
+                    renderSpotifyPlayer('spotifyPlayer');
                 </script>                
         {% endblock %}
+    {% block footer %}{% endblock %}        
     </body>
 </html>

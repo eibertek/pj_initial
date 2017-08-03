@@ -5,7 +5,7 @@ var BUILD_DIR = path.resolve(__dirname, 'public/dist');
 var APP_DIR = path.resolve(__dirname, 'src/');
 
 var config = {
-  entry: [APP_DIR + '/mapComponent.js', APP_DIR + '/stl/index.scss'],
+  entry: [APP_DIR + '/mapComponent.js', APP_DIR + '/slideShow.js', APP_DIR + '/spotifyPlayer.js', APP_DIR + '/stl/index.scss'],
   output: {
     path: BUILD_DIR,
     filename: 'bundle.js',
